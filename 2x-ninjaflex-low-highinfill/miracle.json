@@ -37,8 +37,8 @@
     "doSplitLongMoves": true,
     "splitMinimumDistance": 0.4,
 
-    "extruderTemp0": 230,
-    "extruderTemp1": 230,
+    "extruderTemp0": 220,
+    "extruderTemp1": 220,
     "platformTemp": 0,
 
     "numberOfShells": 2,

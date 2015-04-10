@@ -2,13 +2,13 @@
     "comment" : [
      "This is a profile for extruding Ninjaflex material by FennerDrives.",
      "Created by Herman Singh."
-    ],
-    "version":"0.1",
+	],
+    "version":"0.2",
 
-    "layerHeightMinimum": 0.27,
-    "layerHeightMaximum": 0.40,
+    "layerHeightMinimum": 0.12,
+    "layerHeightMaximum": 0.27,
 
-    "layerHeight": 0.30,
+    "layerHeight": 0.20,
     "layerWidthMaximum": 0.4,
     "layerWidthMinimum": 0.4,
     "layerWidthRatio": 1.481481,
@@ -18,7 +18,7 @@
     "startZ": 0.2,
     "defaultExtruder": 0,
 
-    "rapidMoveFeedRateXY": 90,
+    "rapidMoveFeedRateXY": 150,
     "rapidMoveFeedRateZ": 23,
 
     "minLayerDuration": 5.0,
@@ -37,11 +37,12 @@
     "doSplitLongMoves": true,
     "splitMinimumDistance": 0.4,
 
-    "extruderTemp0": 220,
-    "extruderTemp1": 220,
+    "extruderTemp0": 250,
+    "extruderTemp1": 250,
     "platformTemp": 0,
 
     "numberOfShells": 2,
+    "shellsLeakyConnections": false,
     "infillShellSpacingMultiplier": 0.7,
     "insetDistanceMultiplier": 1.0,
 
@@ -54,7 +55,7 @@
     "coarseness": 0.0001,
 
     "sparseInfillPattern": "hexagonal",
-    "infillDensity": 0.25,
+    "infillDensity": 0.1,
     "infillOrientationOffset": 0,
     "infillOrientationInterval": 90,
     "infillOrientationRange": 90,
@@ -151,7 +152,7 @@
     "extruderProfiles": [
         {
             "bridgesExtrusionProfile": "bridges",
-            "feedDiameter": 1.77,
+            "feedDiameter": 1.75,
             "feedstockMultiplier": 0.93,
             "firstLayerExtrusionProfile": "firstlayer",
             "firstLayerRaftExtrusionProfile": "firstlayerraft",
@@ -160,8 +161,9 @@
             "nozzleDiameter": 0.4,
             "outlinesExtrusionProfile": "outlines",
             "raftBaseExtrusionProfile": "raftbase",
-            "restartExtraDistance": 0.2,
-            "retractDistance": 0.5,
+            "raftExtrusionProfile": "raft",
+            "restartExtraDistance": 0.0,
+            "retractDistance": 1.3,
             "retractRate": 25,
             "toolchangeRetractDistance" : 19.0,
             "toolchangeRetractRate" : 6.0,
@@ -170,7 +172,7 @@
         },
         {
             "bridgesExtrusionProfile": "bridges",
-            "feedDiameter": 1.77,
+            "feedDiameter": 1.75,
             "feedstockMultiplier": 0.93,
             "firstLayerExtrusionProfile": "firstlayer",
             "firstLayerRaftExtrusionProfile": "firstlayerraft",
@@ -179,8 +181,9 @@
             "nozzleDiameter": 0.4,
             "outlinesExtrusionProfile": "outlines",
             "raftBaseExtrusionProfile": "raftbase",
-            "restartExtraDistance": 0.2,
-            "retractDistance": 0.5,
+            "raftExtrusionProfile": "raft",
+            "restartExtraDistance": 0.0,
+            "retractDistance": 1.3,
             "retractRate": 25,
             "toolchangeRetractDistance" : 19.0,
             "toolchangeRetractRate" : 6.0,
@@ -190,7 +193,7 @@
     ],
     "extrusionProfiles": {
         "bridges": {
-            "feedrate": 15,
+            "feedrate": 20,
             "temperature_disabled": 100.0
         },
         "firstlayer": {
@@ -214,8 +217,12 @@
             "temperature_disabled": 100.0
         },
         "raftbase": {
-            "feedrate": 15,
+            "feedrate": 10,
             "temperature_disabled": 100.0
+        },
+        "raft": {
+            "feedrate": 15,
+            "temperature_disabled": 230.0
         }
     }
 }
